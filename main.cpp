@@ -30,7 +30,7 @@ void fileToMemoryTransfer(char* fileName, char** data, size_t& numOfBytes) {
 
 const int rowSize = 256;
 int** localHistogram = nullptr;
-atomic<long long int> globalHistogram[rowSize][rowSize];
+atomic<long long int> globalHistogram[rowSize*rowSize];
 
 int main(int arcc, char* argv[]) {
 
